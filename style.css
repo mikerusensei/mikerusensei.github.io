@@ -68,6 +68,7 @@ nav ul li a{
     font-size: 20px;
     text-decoration: none;
     color: var(--black);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #check:checked ~ ul{
@@ -101,7 +102,7 @@ nav ul li a{
 
 section {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 99vh;
     border-style: solid;
     border-color: green;
 }
@@ -110,13 +111,93 @@ section {
     min-height: 100vh;
 }
 
+.welcome-text {
+    width: 300px;
+    justify-content: center;
+    border-style: solid;
+    border-color: red;
+}
+
 .text_container {
     color: var(--black);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: inherit;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem;
+
+    border-style: solid;
+    border-color: blueviolet;
+}
+
+#welcome {
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-style: solid;
+    border-color: blue;
+}
+
+.btns_socials {
+    width: inherit;
+    border-style: solid;
+    border-color: lawngreen;
+}
+
+.btns_socials button {
+    background-color: var(--black);
+    border-radius: 10px;
+    color: var(--white);
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.social-links {
+    border-style: solid;
+    border-color: violet;
+}
+
+.social-links a {
+    color: var(--black);
+    font-size: 1.875rem;
+    justify-content: space-between;
+}
+
+.text_container p, .text_container span {
+    font-size: 1.5rem;
 }
 
 .text_container span {
     color: #EF8354;
+}
+
+#about-me {
+    height: 99vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-me .header {
+    border-style: solid;
+    border-color: blue;
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    color: var(--black);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-style: solid;
+    border-color: white;
+
 }
 
 footer {
@@ -147,6 +228,48 @@ footer {
     }
     to {
         transform: translateY(101vh);
+    }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+@media only screen and (min-width: 768px) {
+    .checkbtn {
+        display: none;
+    }
+    ul {
+        left: 0;
+        height: inherit;
+        flex: 1;
+        text-align: right;
+    }
+
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        position: relative;
     }
 }
 
