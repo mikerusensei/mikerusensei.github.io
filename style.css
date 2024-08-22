@@ -68,7 +68,7 @@ nav ul li a{
     font-size: 20px;
     text-decoration: none;
     color: var(--black);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Impact Regular', sans-serif;
 }
 
 #check:checked ~ ul{
@@ -120,7 +120,7 @@ section {
 
 .text_container {
     color: var(--black);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Impact Regular', sans-serif;
     width: inherit;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -154,7 +154,7 @@ section {
     border-radius: 10px;
     color: var(--white);
     cursor: pointer;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Impact Regular', sans-serif;
     padding: 15px;
     font-size: 1.5rem;
 }
@@ -194,7 +194,7 @@ section {
     margin: auto;
     justify-content: center;
     color: var(--black);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Impact Regular', sans-serif;
     border-style: solid;
     border-color: white;
 
@@ -295,4 +295,11 @@ footer {
         text-decoration: none;
         position: relative;
     }
+}
+
+@font-face {
+    font-family: 'Impact Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('impact.woff') format('woff');
 }
