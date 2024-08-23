@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 :root {
@@ -17,18 +18,23 @@
 
 body {
     background-color:var(--white);
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+
+    border-style: solid;
+    border-color: blue;
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     /* display: none; */
+    
 }
 
 nav {
     height: 50px;
-    border-style: solid;
-    border-color: blue;
+    /* border-style: solid;
+    border-color: red; */
 }
 
 #check{
@@ -48,14 +54,15 @@ nav {
 
 ul{
     position: fixed;
-    width: 100%;
+    width: 99vw;
     height: 100vh;
     background: var(--white);
     left: 200%;
     text-align: center;
     transition: all .5s;
-    border-style: solid;
-    border-color: red;
+
+    /* border-style: solid;
+    border-color: red; */
 }
 
 nav ul li{
@@ -102,9 +109,9 @@ nav ul li a{
 
 section {
     width: 100vw;
-    min-height: 99vh;
-    border-style: solid;
-    border-color: green;
+    min-height: 100vh;
+    /* border-style: solid;
+    border-color: green; */
 }
 
 #home {
@@ -114,8 +121,8 @@ section {
 .welcome-text {
     width: 300px;
     justify-content: center;
-    border-style: solid;
-    border-color: red;
+    /* border-style: solid;
+    border-color: red; */
 }
 
 .text_container {
@@ -128,25 +135,27 @@ section {
     justify-content: center;
     font-size: 2rem;
 
-    border-style: solid;
-    border-color: blueviolet;
+    /* border-style: solid;
+    border-color: blueviolet; */
 }
 
 #welcome {
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-    border-style: solid;
-    border-color: blue;
+
+    /* border-style: solid;
+    border-color: blue; */
 }
 
 .btns_socials {
     width: inherit;
-    border-style: solid;
-    border-color: lawngreen;
+
+    /* border-style: solid;
+    border-color: lawngreen; */
 }
 
 .btns_socials button {
@@ -159,10 +168,10 @@ section {
     font-size: 1.5rem;
 }
 
-.social-links {
+/* .social-links {
     border-style: solid;
     border-color: violet;
-}
+} */
 
 .social-links a {
     color: var(--black);
@@ -179,7 +188,7 @@ section {
 }
 
 #about-me {
-    height: 99vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -187,29 +196,29 @@ section {
 }
 
 #about-me .header {
-    border-style: solid;
-    border-color: blue;
     display: flex;
     width: 50%;
     margin: auto;
     justify-content: center;
     color: var(--black);
     font-family: 'Impact Regular', sans-serif;
-    border-style: solid;
-    border-color: white;
 
+    /* border-style: solid;
+    border-color: blue; */
 }
 
 footer {
-    border-style: solid;
-    border-color: red;
+    width: 100vw;
+
+    /* border-style: solid;
+    border-color: red; */
 }
 
 #falling_container {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90vw;
+    width: 99vw;
     height: 100vh;
     pointer-events: none;
     z-index: -1;
@@ -237,17 +246,17 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--white); 
+    background: var(--white);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
     border-radius: 5px;
 }
 
   /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
 }
 
 @media only screen and (min-width: 768px) {
@@ -280,6 +289,7 @@ footer {
 
     ul {
         left: 0;
+        width: inherit;
         height: inherit;
         flex: 1;
         text-align: right;
@@ -301,5 +311,5 @@ footer {
     font-family: 'Impact Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('impact.woff') format('woff');
+    src: url('http://font.download/impact.woff') format('woff');
 }
