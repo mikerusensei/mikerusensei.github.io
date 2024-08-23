@@ -188,11 +188,11 @@ section {
     font-size: 1.5rem;
 }
 
-.text_container span {
+span {
     color: #EF8354;
 }
 
-#about-me, #project-me {
+#about-me, #project-me, #educ-me {
     height: 100vh;
     width: 100vw;
     align-content: center;
@@ -201,8 +201,7 @@ section {
     border-color: green;
 }
 
-
-#about-me .header-container, #project-me .header-container {
+.header-container {
     display: flex;
     width: 60vw;
     margin: auto;
@@ -211,20 +210,20 @@ section {
     border-color: white;
 }
 
-#about-me .header-container p, #project-me .header-container p{
+.header-container p{
     font-family: 'Kanit';
     height: initial;
     font-size: 1.5rem;
     color: var(--black);
 }
 
-#about-me .header-container i, #project-me .header-container i{
+.header-container i {
     font-size: 2rem;
     margin-right: 10px;
     color: var(--black);
 }
 
-#about-me .intro {
+#about-me .intro{
     height: auto;
     width: 70vw;
     margin: auto;
@@ -236,6 +235,40 @@ section {
     border-color: aqua;
 }
 
+#project-me #projects-btn {
+    height: auto;
+    width: 50vw;
+    margin: auto;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    border-style: solid;
+    border-color: aqua;
+}
+
+#project-me #projects-btn button {
+    width: 200px;
+    height: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#project-me #projects-btn button .title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+}
+
+#project-me #projects-btn button .desc {
+    font-family: 'Inder', sans-serif;
+    font-size: 0.625rem;
+    float: left;
+}
+
+
 footer {
     width: 100vw;
 
@@ -243,7 +276,7 @@ footer {
     border-color: red; */
 }
 
-#falling_container {
+#falling_container{
     position: absolute;
     top: 0;
     left: 0;
@@ -253,14 +286,14 @@ footer {
     z-index: -1;
 }
 
-.number {
+.number{
     position: absolute;
     font-size: 1rem;
     color: #07beb8;
     animation: fall linear;
 }
 
-#topBTN {
+#top-btn {
     display: none;
     position: fixed;
     bottom: 0;
@@ -274,6 +307,8 @@ footer {
     font-family: 'Kanit', sans-serif;
     padding: 15px;
     font-size: 1rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 @keyframes fall {

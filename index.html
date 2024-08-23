@@ -3,6 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A web based portfolio that can showcase deatails of the author"/>
+        <meta name="keywords" content="portfolio, development" />
+        <meta name="author" content="Michael Alexis Ponce" />
+        <meta name="robots" content="index, nofollow" />
+        
+        <meta property="og:title" content="Portfolio | Michael Ponce"/>
+        <meta property="og:description" content="A web based portfolio" />
+        <meta property="og:image" content="https://res.cloudinary.com/dzmhkee5i/image/upload/v1724330548/assets/vygl83wlwtwagydyz0kc.png" />
+        <meta property="og:url" content="https://mikerusensei.github.io" />
+
         <title>Portfolio | Michael Ponce</title>
 
         <link rel="stylesheet" href="style.css" />
@@ -13,6 +23,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Inder&family=Kanit:wght@600&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="https://res.cloudinary.com/dzmhkee5i/image/upload/v1724330531/assets/x8jbvq8hkiebcm1nidux.png" type="image/icon_type" />
+
     </head>
     <body class="darkmode">
         <header>
@@ -71,14 +83,14 @@
                     </div>
                     <div class="intro">
                         <p>
-                            Hi there! My name is Michael Alexis Ponce a Computer Science student
+                            Hi there! My name is <span>Michael Alexis Ponce</span> a Computer Science student
                             at College of Mary Immaculate Pandi Bulacan Inc. I do love developing
                             and solving problems in various fields. Here are some things that I do:
                         </p>
                         <p>
-                            <li>Programming</li>
-                            <li>Game Development</li>
-                            <li>Web Development</li>
+                            <li><span>Programming</span></li>
+                            <li><span>Game Development</span></li>
+                            <li><span>Web Development</span></li>
                         </p>
                         <p>
                             Feel free to look around my portfolio to see some amazing stuff that
@@ -93,11 +105,43 @@
                         <i class="fa-solid fa-square-check"></i>
                         <p>PROJECTS</p>
                     </div>
+                    <div id="projects-btn">
+                        <a href="https://github.com/mikerusensei/jumprun">
+                            <button>
+                                <p class="title">JUMPRUN</p>
+                                <p class="desc">A 2D platformer game to cure your boredom</p>
+                            </button>
+                        </a>
+                        <a href="https://github.com/mikerusensei/music-player">
+                            <button>
+                                <p class="title">MUSIC-PLAYER</p>
+                                <p class="desc">A customized music player that gives mood based playlist</p>
+                            </button>
+                        </a>
+                        <a href="https://github.com/mikerusensei/plagiarism-checker">
+                            <button>
+                                <p class="title">PLAGIARISM-CHECKER</p>
+                                <p class="desc">A simple plagiarism checker build in python language</p></button>
+                        </a>
+                        <a href="https://github.com/mikerusensei/banking-system">
+                            <button>
+                                <p class="title">BANKING-SYSTEM</p>
+                                <p class="desc">A prototype for banking simulation build in python language</p>
+                            </button>
+                        </a>
+                    </div>
                 </article>
             </section>
-            <section id="education"></section>
+            <section id="education">
+                <article id="educ-me">
+                    <div class="header-container">
+                        <i class="fa-solid fa-book"></i>
+                        <p>EDUCATION</p>
+                    </div>
+                </article>
+            </section>
 
-            <button id="topBTN" title="Go to top">
+            <button id="top-btn" title="Go to top">
                 <div class="container">
                     <i class="fa-solid fa-arrow-up"></i>
                     <p>Top</p>

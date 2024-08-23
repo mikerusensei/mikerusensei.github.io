@@ -1,6 +1,7 @@
-const toggle_switch = document.getElementById('toggle-switch')
-const top_btn = document.getElementById('topBTN')
-const falling_container= document.getElementById('falling-container')
+const toggle_switch = document.getElementById('toggle-switch');
+const top_btn = document.getElementById('top-btn');
+const falling_container= document.getElementById('falling-container');
+const falling_checks = document.getElementById('falling-checks');
 const createdNumbers = new Set();
 
 toggle_switch.addEventListener('click', function() {
@@ -14,7 +15,7 @@ toggle_switch.addEventListener('click', function() {
 top_btn.addEventListener('click', function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-})
+});
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -23,6 +24,20 @@ function scrollFunction() {
         top_btn.style.display = "none";
     }
 }
+;
+function createFallingChecks() {
+    const check = document.createElement('div');
+    check.classList.add('checks');
+    check.textContent = "✔";
+    check.style.left = `${Math.random() * 98}vw`;
+    check.style.animationDuration = `${Math.random() * 5 + 2}s`;
+    falling_checks.appendChild(check);
+
+    check.addEventListener('animationend', () => {
+        check.remove();
+    })
+    
+};
 
 function createFallingNumbers() {
     const number = document.createElement('div');
@@ -36,7 +51,7 @@ function createFallingNumbers() {
     number.addEventListener('animationend', () => {
         number.remove();
     });
-}
+};
 
 
 var typing = new Typed(".typing_text", {
@@ -51,4 +66,5 @@ window.onscroll = function() {
     scrollFunction();
 };
 
-setInterval(createFallingNumbers    , 100);
+// setInterval(createFallingChecks, 100);
+setInterval(createFallingNumbers, 100);
