@@ -8,11 +8,11 @@
 
 :root {
     --black: #161616;
-    --white: #dfdddd;
+    --white: #c5c3c3;
 }
 
 .darkmode {
-    --black: #dfdddd;
+    --black: #c5c3c3;
     --white: #161616;
 }
 
@@ -26,6 +26,8 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
     width: 100vw;
     /* display: none; */
     
@@ -75,7 +77,8 @@ nav ul li a{
     font-size: 20px;
     text-decoration: none;
     color: var(--black);
-    font-family: 'Impact Regular', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
 }
 
 #check:checked ~ ul{
@@ -119,15 +122,16 @@ section {
 }
 
 .welcome-text {
-    width: 300px;
+    width: 350px;
     justify-content: center;
+    text-transform: uppercase;
     /* border-style: solid;
     border-color: red; */
 }
 
 .text_container {
     color: var(--black);
-    font-family: 'Impact Regular', sans-serif;
+    font-family: 'Kanit', sans-serif;
     width: inherit;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -163,20 +167,20 @@ section {
     border-radius: 10px;
     color: var(--white);
     cursor: pointer;
-    font-family: 'Impact Regular', sans-serif;
-    padding: 15px;
-    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    padding: 10px;
+    font-size: 1.25rem;
 }
 
-/* .social-links {
-    border-style: solid;
-    border-color: violet;
-} */
+.social-links {
+    margin-top: 10px;
+    /* border-style: solid;
+    border-color: violet; */
+}
 
 .social-links a {
     color: var(--black);
-    font-size: 1.875rem;
-    justify-content: space-between;
+    font-size: 2rem;
 }
 
 .text_container p, .text_container span {
@@ -226,7 +230,7 @@ footer {
 
 .number {
     position: absolute;
-    font-size: 12px;
+    font-size: 1rem;
     color: #07beb8;
     animation: fall linear;
 }
@@ -307,9 +311,8 @@ footer {
     }
 }
 
-@font-face {
-    font-family: 'Impact Regular';
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-weight: normal;
-    src: url('http://font.download/impact.woff') format('woff');
 }
