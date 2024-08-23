@@ -18,6 +18,7 @@
 
 body {
     background-color:var(--white);
+    font-size: 16px;
     width: 100vw;
     overflow-x: hidden;
 
@@ -34,7 +35,7 @@ header {
 }
 
 nav {
-    height: 50px;
+    height: 60  px;
     /* border-style: solid;
     border-color: red; */
 }
@@ -191,24 +192,48 @@ section {
     color: #EF8354;
 }
 
-#about-me {
+#about-me, #project-me {
     height: 100vh;
     width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-content: center;
+
+    border-style: solid;
+    border-color: green;
 }
 
-#about-me .header {
+
+#about-me .header-container, #project-me .header-container {
     display: flex;
-    width: 50%;
+    width: 60vw;
     margin: auto;
     justify-content: center;
-    color: var(--black);
-    font-family: 'Impact Regular', sans-serif;
+    border-style: solid;
+    border-color: white;
+}
 
-    /* border-style: solid;
-    border-color: blue; */
+#about-me .header-container p, #project-me .header-container p{
+    font-family: 'Kanit';
+    height: initial;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+#about-me .header-container i, #project-me .header-container i{
+    font-size: 2rem;
+    margin-right: 10px;
+    color: var(--black);
+}
+
+#about-me .intro {
+    height: auto;
+    width: 70vw;
+    margin: auto;
+    color: var(--black);
+    font-family: 'Inder', sans-serif;
+    font-size: 1.25rem;
+
+    border-style: solid;
+    border-color: aqua;
 }
 
 footer {
@@ -235,12 +260,28 @@ footer {
     animation: fall linear;
 }
 
+#topBTN {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 15px;
+    color: var(--black);
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    padding: 15px;
+    font-size: 1rem;
+}
+
 @keyframes fall {
     from {
         transform: translateY(0);
     }
     to {
-        transform: translateY(101vh);
+        transform: translateY(100vh);
     }
 }
 

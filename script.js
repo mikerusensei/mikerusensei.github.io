@@ -1,4 +1,5 @@
-const toggle_switch = document.getElementById('toggle-switch');
+const toggle_switch = document.getElementById('toggle-switch')
+const top_btn = document.getElementById('topBTN')
 const falling_container= document.getElementById('falling-container')
 const createdNumbers = new Set();
 
@@ -9,6 +10,19 @@ toggle_switch.addEventListener('click', function() {
         document.body.classList.add('darkmode');
     }
 });
+
+top_btn.addEventListener('click', function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        top_btn.style.display = "block";
+    } else {
+        top_btn.style.display = "none";
+    }
+}
 
 function createFallingNumbers() {
     const number = document.createElement('div');
@@ -32,5 +46,9 @@ var typing = new Typed(".typing_text", {
     backSpeed: 50,
     backDelay: 500,
 });
+
+window.onscroll = function() {
+    scrollFunction();
+};
 
 setInterval(createFallingNumbers    , 100);
