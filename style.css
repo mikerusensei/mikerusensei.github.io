@@ -60,7 +60,7 @@ ul{
     width: 99vw;
     height: 100vh;
     background: var(--white);
-    left: 200%;
+    left: -100%;
     text-align: center;
     transition: all .5s;
 
@@ -163,16 +163,6 @@ section {
     border-color: lawngreen; */
 }
 
-.btns_socials button {
-    background-color: var(--black);
-    border-radius: 10px;
-    color: var(--white);
-    cursor: pointer;
-    font-family: 'Kanit', sans-serif;
-    padding: 10px;
-    font-size: 1.25rem;
-}
-
 .social-links {
     margin-top: 10px;
     /* border-style: solid;
@@ -268,12 +258,127 @@ span {
     float: left;
 }
 
+#educ-info {
+    height: auto;
+    width: 70vw;
+    margin: auto;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+    border-style: solid;
+    border-color: aqua;
+}
+
+#educ-info div {
+    width: 260px;
+    height: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: center;
+
+    border-style: solid;
+    border-color: green;
+}
+
+.degree {
+    font-family: 'Inder', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.school {
+    font-family: 'Inder', sans-serif;
+    font-size: 0.625rem;
+    color: var(--black);
+}
+
 
 footer {
     width: 100vw;
+    height: 15vh;
+    display: flex;
 
-    /* border-style: solid;
-    border-color: red; */
+    border-style: solid;
+    border-color: red;
+}
+
+footer .links div a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+footer .links p, footer .CV p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer .links {
+    color: var(--black);
+    font-family: 'Inder', sans-serif;
+    font-size: 0.75rem;
+    margin: 10px;
+}
+
+.CV {
+    font-family: 'Inder', sans-serif;
+    font-size: 0.75rem;
+    color: var(--black);
+    margin: 10px;
+}
+
+.button-50 {
+    appearance: button;
+    background-color: var(--black);
+    background-image: none;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    box-shadow: var(--black) 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: var(--white);
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Inder',Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.button-50:focus {
+    text-decoration: none;
+}
+
+.button-50:hover {
+    text-decoration: none;
+}
+
+.button-50:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+}
+
+.button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button-50 {
+        padding: 12px 50px;
+    }
 }
 
 #falling_container{
@@ -301,11 +406,11 @@ footer {
     z-index: 99;
     background-color: var(--white);
     border: 1px solid var(--black);
-    border-radius: 15px;
+    border-radius: 10px;
     color: var(--black);
     cursor: pointer;
     font-family: 'Kanit', sans-serif;
-    padding: 15px;
+    padding: 5px;
     font-size: 1rem;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -385,10 +490,4 @@ footer {
         text-decoration: none;
         position: relative;
     }
-}
-
-.kanit-regular {
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }

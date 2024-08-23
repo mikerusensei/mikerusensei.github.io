@@ -2,6 +2,7 @@ const toggle_switch = document.getElementById('toggle-switch');
 const top_btn = document.getElementById('top-btn');
 const falling_container= document.getElementById('falling-container');
 const falling_checks = document.getElementById('falling-checks');
+const check = document.getElementById('check');
 const createdNumbers = new Set();
 
 toggle_switch.addEventListener('click', function() {
@@ -15,6 +16,21 @@ toggle_switch.addEventListener('click', function() {
 top_btn.addEventListener('click', function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+});
+
+check.addEventListener('change', function() {
+    if(this.checked) {
+        falling_container.style.display = "none";
+    } else {
+        falling_container.style.display = "block";
+    }
+});
+
+window.addEventListener('resize', function() {
+    if(window.innerWidth >= 768) {
+        check.checked = false;
+        falling_container.style.display = "block";
+    }
 });
 
 function scrollFunction() {
