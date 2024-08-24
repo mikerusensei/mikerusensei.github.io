@@ -20,7 +20,6 @@ body {
     background-color:var(--white);
     font-size: 16px;
     width: 100vw;
-    overflow-x: hidden;
 
     border-style: solid;
     border-color: blue;
@@ -28,14 +27,13 @@ body {
 
 header {
     position: sticky;
-    top: 0;
     width: 100vw;
-    /* display: none; */
+    height: 60px;
     
 }
 
 nav {
-    height: 60  px;
+    height: 60px;
     /* border-style: solid;
     border-color: red; */
 }
@@ -123,11 +121,11 @@ section {
 }
 
 .welcome-text {
-    width: 350px;
+    width: 60vw;
     justify-content: center;
     text-transform: uppercase;
-    /* border-style: solid;
-    border-color: red; */
+    border-style: solid;
+    border-color: red;
 }
 
 .text_container {
@@ -138,7 +136,6 @@ section {
     margin-bottom: 20px;
     align-content: center;
     justify-content: center;
-    font-size: 2rem;
 
     /* border-style: solid;
     border-color: blueviolet; */
@@ -171,15 +168,36 @@ section {
 
 .social-links a {
     color: var(--black);
-    font-size: 2rem;
+    font-size: 1.25rem;
+    margin-right: 5px;
 }
 
 .text_container p, .text_container span {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 span {
     color: #EF8354;
+}
+
+.image_container {
+    position: relative;
+    width: 40vw;
+    height: 60vh;
+    display: none;
+    /* border-style: solid;
+    border-color: blue; */
+}
+
+.images {
+    position: relative;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.images img {
+    position: absolute;
 }
 
 #about-me, #project-me, #educ-me {
@@ -203,23 +221,23 @@ span {
 .header-container p{
     font-family: 'Kanit';
     height: initial;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--black);
 }
 
 .header-container i {
-    font-size: 2rem;
+    font-size: 1.875rem;
     margin-right: 10px;
     color: var(--black);
 }
 
-#about-me .intro{
+#about-me .intro {
     height: auto;
     width: 70vw;
     margin: auto;
     color: var(--black);
     font-family: 'Inder', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
 
     border-style: solid;
     border-color: aqua;
@@ -295,7 +313,6 @@ span {
     font-size: 0.625rem;
     color: var(--black);
 }
-
 
 footer {
     width: 100vw;
@@ -375,7 +392,7 @@ footer .links {
     line-height: 20px;
     margin: 0 5px 10px 0;
     overflow: visible;
-    padding: 12px 40px;
+    padding: 8px 22px;
     text-align: center;
     text-transform: none;
     touch-action: manipulation;
@@ -389,7 +406,7 @@ footer .links {
     position: absolute;
     top: 0;
     left: 0;
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     pointer-events: none;
     z-index: -1;
@@ -397,8 +414,9 @@ footer .links {
 
 .number{
     position: absolute;
+    font-family: "Vast Shadow", sans-serif;
     font-size: 1rem;
-    color: #07beb8;
+    color: #2d6a4f;
     animation: fall linear;
 }
 
@@ -448,50 +466,72 @@ footer .links {
     background: #555;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .checkbtn {
         display: none;
     }
-    ul {
-        left: 0;
-        height: inherit;
-        flex: 1;
-        text-align: right;
+
+    header {
+        height: 60px;
     }
 
-    nav ul li{
+    ul {
+        height: inherit;
+        width: 100vw;
+        left: 0;
+        height: inherit;
+        text-align: right;
+
+        border-style: solid;
+        border-color: red;
+    }
+
+    nav ul li {
         display: inline-block;
-        list-style: none;
         margin: 10px 20px;
     }
 
-    nav ul li a{
-        text-decoration: none;
-        position: relative;
+    .text_container p, .text_container span {
+        font-size: 1.5rem;
     }
+
+    .social-links a {
+        color: var(--black);
+        font-size: 1.5rem;
+    }
+
+    .button-50 {
+        font-size: 1.25rem;
+        padding: 12px 40px;
+    }
+
+    #about-me .intro {
+        font-size: 1.25rem;
+    }
+
+    .header-container p{
+        font-size: 1.5rem;
+    }
+    
+    .header-container i {
+        font-size: 2rem;
+    }
+
+    
+}   
+
+@media screen and (min-width: 1024px) {
+    
 }
 
-@media only screen and (min-width: 1025px) {
-    .checkbtn{
-        display: none;
+@media only screen and (min-width: 1440px) {
+    .welcome-text {
+        width: 40vw;
     }
+    .image_container {
+        display: block;
 
-    ul {
-        left: 0;
-        width: inherit;
-        height: inherit;
-        flex: 1;
-        text-align: right;
-    }
-
-    nav ul li{
-        display: inline-block;
-        list-style: none;
-        margin: 10px 20px;
-    }
-
-    nav ul li a{
-        text-decoration: none;
-        position: relative;
+        border-style: solid;
+        border-color: blue;
     }
 }
