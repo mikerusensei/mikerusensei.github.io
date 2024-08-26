@@ -42,6 +42,10 @@ nav {
     display: none;
 }
 
+#setting {
+    display: none;
+}
+
 .checkbtn {
     color: var(--black);
     font-size: 2rem;
@@ -84,12 +88,18 @@ nav ul li a{
     left: 0
 }
 
-#toggle-switch {
+#settings i {
+    color: var(--black);
+    font-size: 2rem;
+}
+
+#toggle-switch{
     height: 50px;
     width: 50px;
     padding: 0;
     background-color: var(--white);
 }
+
 
 #toggle-switch label:last-child {
     font-size: 2rem;
@@ -185,8 +195,8 @@ span {
     width: 40vw;
     height: 60vh;
     display: none;
-    /* border-style: solid;
-    border-color: blue; */
+    border-style: solid;
+    border-color: blue;
 }
 
 .images {
@@ -197,7 +207,11 @@ span {
 }
 
 .images img {
+    width: 40vw;
     position: absolute;
+
+    border-style: solid;
+    border-color: green;
 }
 
 #about-me, #project-me, #educ-me {
@@ -444,94 +458,5 @@ footer .links {
     }
     to {
         transform: translateY(100vh);
-    }
-}
-
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--white);
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
-}
-
-  /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-@media screen and (min-width: 768px) {
-    .checkbtn {
-        display: none;
-    }
-
-    header {
-        height: 60px;
-    }
-
-    ul {
-        height: inherit;
-        width: 100vw;
-        left: 0;
-        height: inherit;
-        text-align: right;
-
-        border-style: solid;
-        border-color: red;
-    }
-
-    nav ul li {
-        display: inline-block;
-        margin: 10px 20px;
-    }
-
-    .text_container p, .text_container span {
-        font-size: 1.5rem;
-    }
-
-    .social-links a {
-        color: var(--black);
-        font-size: 1.5rem;
-    }
-
-    .button-50 {
-        font-size: 1.25rem;
-        padding: 12px 40px;
-    }
-
-    #about-me .intro {
-        font-size: 1.25rem;
-    }
-
-    .header-container p{
-        font-size: 1.5rem;
-    }
-    
-    .header-container i {
-        font-size: 2rem;
-    }
-
-    
-}   
-
-@media screen and (min-width: 1024px) {
-    
-}
-
-@media only screen and (min-width: 1440px) {
-    .welcome-text {
-        width: 40vw;
-    }
-    .image_container {
-        display: block;
-
-        border-style: solid;
-        border-color: blue;
     }
 }

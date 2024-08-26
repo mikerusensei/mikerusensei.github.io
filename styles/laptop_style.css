@@ -1,0 +1,9 @@
+@media screen and (min-width: 1024px) {
+    .image_container {
+        display: block;
+    }
+
+    .welcome-text {
+        width: 40vw;
+    }
+}

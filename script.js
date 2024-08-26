@@ -3,7 +3,18 @@ const top_btn = document.getElementById('top-btn');
 const falling_container= document.getElementById('falling-container');
 const falling_checks = document.getElementById('falling-checks');
 const check = document.getElementById('check');
+const setting = document.getElementById('setting');
 const createdNumbers = new Set();
+
+let fallingnuminterval;
+
+setting.addEventListener('click', function() {
+    if(this.checked) {
+        clearInterval(fallingnuminterval);
+    } else {
+        fallingnuminterval = setInterval(createFallingNumbers, 100);
+    }
+});
 
 toggle_switch.addEventListener('click', function() {
     if (document.body.classList.contains('darkmode')) {
@@ -83,4 +94,4 @@ window.onscroll = function() {
 };
 
 // setInterval(createFallingChecks, 100);
-setInterval(createFallingNumbers, 100);
+fallingnuminterval = setInterval(createFallingNumbers, 100);

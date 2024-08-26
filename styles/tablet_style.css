@@ -1,0 +1,51 @@
+@media screen and (min-width: 768px) {
+    .checkbtn {
+        display: none;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    ul {
+        height: inherit;
+        width: 100vw;
+        left: 0;
+        height: inherit;
+        text-align: right;
+
+        border-style: solid;
+        border-color: red;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 10px 20px;
+    }
+
+    .text_container p, .text_container span {
+        font-size: 1.5rem;
+    }
+
+    .social-links a {
+        color: var(--black);
+        font-size: 1.5rem;
+    }
+
+    .button-50 {
+        font-size: 1.25rem;
+        padding: 12px 40px;
+    }
+
+    #about-me .intro {
+        font-size: 1.25rem;
+    }
+
+    .header-container p{
+        font-size: 1.5rem;
+    }
+    
+    .header-container i {
+        font-size: 2rem;
+    }
+}   
