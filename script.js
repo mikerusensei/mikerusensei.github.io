@@ -4,6 +4,10 @@ const falling_container= document.getElementById('falling-container');
 const falling_checks = document.getElementById('falling-checks');
 const check = document.getElementById('check');
 const setting = document.getElementById('setting');
+const slidingWrapper = document.querySelector('.sliding-wrapper');
+
+let currentIndex = 0;
+
 const createdNumbers = new Set();
 
 let fallingnuminterval;
@@ -43,6 +47,14 @@ window.addEventListener('resize', function() {
         falling_container.style.display = "block";
     }
 });
+
+function slideShow() {
+    currentIndex++;
+    if (currentIndex >= document.querySelectorAll('.img_container').length) {
+        currentIndex = 0;
+    }
+    slidingWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -95,3 +107,4 @@ window.onscroll = function() {
 
 // setInterval(createFallingChecks, 100);
 fallingnuminterval = setInterval(createFallingNumbers, 100);
+setInterval(slideShow, 3000); // Slide every 3 seconds

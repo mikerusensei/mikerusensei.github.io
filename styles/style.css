@@ -25,113 +25,15 @@ body {
     border-color: blue;
 }
 
-header {
-    position: sticky;
-    width: 100vw;
-    height: 60px;
-    
-}
-
-nav {
-    height: 60px;
-    /* border-style: solid;
-    border-color: red; */
-}
-
-#check{
-    display: none;
-}
-
-#setting {
-    display: none;
-}
-
-.checkbtn {
-    color: var(--black);
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.fa-bars{
-    margin-top: 8px;
-    margin-left: 10px;
-}
-
-ul{
-    position: fixed;
-    width: 99vw;
-    height: 100vh;
-    background: var(--white);
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-
-    /* border-style: solid;
-    border-color: red; */
-}
-
-nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-}
-
-nav ul li a{
-    font-size: 20px;
-    text-decoration: none;
-    color: var(--black);
-    font-family: 'Kanit', sans-serif;
-    text-transform: uppercase;
-}
-
-#check:checked ~ ul{
-    left: 0
-}
-
-#settings i {
-    color: var(--black);
-    font-size: 2rem;
-}
-
-#toggle-switch{
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    background-color: var(--white);
-}
-
-
-#toggle-switch label:last-child {
-    font-size: 2rem;
-}
-
-#toggle-switch label:first-child {
-    font-size: 2rem;
-    display: none;
-}
-
-.darkmode #toggle-switch label:first-child {
-    display: block;
-    color: var(--black);
-}
-
-.darkmode #toggle-switch label:last-child {
-    display: none;
-}
-
 section {
     width: 100vw;
-    min-height: 100vh;
-    /* border-style: solid;
-    border-color: green; */
-}
-
-#home {
     min-height: 100vh;
 }
 
 .welcome-text {
     width: 60vw;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-transform: uppercase;
     border-style: solid;
@@ -155,6 +57,7 @@ section {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -192,9 +95,10 @@ span {
 
 .image_container {
     position: relative;
-    width: 40vw;
-    height: 60vh;
+    width: 50vw;
+    height: 50vh;
     display: none;
+    z-index: -9999;
     border-style: solid;
     border-color: blue;
 }
@@ -202,22 +106,109 @@ span {
 .images {
     position: relative;
     align-items: center;
-    width: 50%;
-    height: 100%;
+    width: 50vh;
+    height: auto;
 }
 
 .images img {
-    width: 40vw;
+    width: inherit;
+    height: inherit;
     position: absolute;
 
     border-style: solid;
     border-color: green;
 }
 
+#about, #projects, #education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: palevioletred;
+}
+
+.sliding-container {
+    display: none;
+    overflow: hidden;
+    width: 40vw;
+    height: 50vh;
+    position: relative;
+    z-index: -9999;
+}
+
+.sliding-wrapper {
+    display: flex;
+    width: 40vw; /* Adjust based on the number of slides */
+    height: 50vh;
+    transition: transform 0.5s ease-in-out;
+}
+
+.img_container {
+    flex: 1 0 100%;
+    position: relative;
+    border-style: solid;
+    border-color: palevioletred;
+}
+
+.img {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 40vh;
+}
+
+.img .bottom {
+    width: inherit;
+    height: inherit;
+}
+
+.img img {
+    position: absolute;
+}
+
+/* .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 50vh;
+} */
+
+/* .bottom {
+    width: 500px;
+    height: 500px;
+    border-style: solid;
+    border-radius: aqua ;
+}
+
+.top.image1{
+    width: 350px;
+    height: 485px;
+}
+.top.image2 {
+    width: 250px;
+    height: 485px;
+} */
+
+.img img.bottom {
+    z-index: 1;
+}
+
+.img img.top {
+    z-index: 2;
+}
+
+
+
+
+
 #about-me, #project-me, #educ-me {
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
-    align-content: center;
+    display: flex;
 
     border-style: solid;
     border-color: green;
@@ -226,7 +217,6 @@ span {
 .header-container {
     display: flex;
     width: 60vw;
-    margin: auto;
     justify-content: center;
     border-style: solid;
     border-color: white;
@@ -423,7 +413,7 @@ footer .links {
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    z-index: -1;
+    z-index: -9999;
 }
 
 .number{
@@ -432,6 +422,7 @@ footer .links {
     font-size: 1rem;
     color: #2d6a4f;
     animation: fall linear;
+    z-index: -9999;
 }
 
 #top-btn {

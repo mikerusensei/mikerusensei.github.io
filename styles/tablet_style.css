@@ -48,4 +48,28 @@
     .header-container i {
         font-size: 2rem;
     }
+    .welcome-text {
+        width: 40vw;
+    }
+
+    .image_container {
+        position: relative;
+        display: flex;
+        width: 40vw;
+        height: 40vh;
+        z-index: -1;
+    }
+    .images {
+        width: inherit;
+        height: auto;
+    }
+
+    #about-me .intro {
+        width: 50vw;
+    
+    }
+
+    .sliding-container {
+        display: block;
+    }
 }   

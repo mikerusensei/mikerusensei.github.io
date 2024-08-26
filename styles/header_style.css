@@ -1,0 +1,93 @@
+header {
+    position: sticky;
+    width: 100vw;
+    height: 60px;
+    
+}
+
+nav {
+    height: 60px;
+    /* border-style: solid;
+    border-color: red; */
+}
+
+#check{
+    display: none;
+}
+
+#setting {
+    display: none;
+}
+
+.checkbtn {
+    color: var(--black);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.fa-bars{
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+ul{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: var(--white);
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 9999;
+
+    border-style: solid;
+    border-color: red;
+}
+
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+}
+
+#check:checked ~ ul{
+    left: 0
+}
+
+#settings i {
+    color: var(--black);
+    font-size: 2rem;
+}
+
+#toggle-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    background-color: var(--white);
+}
+
+#toggle-switch label:last-child {
+    font-size: 2rem;
+}
+
+#toggle-switch label:first-child {
+    font-size: 2rem;
+    display: none;
+}
+
+.darkmode #toggle-switch label:first-child {
+    display: block;
+    color: var(--black);
+}
+
+.darkmode #toggle-switch label:last-child {
+    display: none;
+}
