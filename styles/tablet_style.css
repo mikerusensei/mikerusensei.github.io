@@ -13,9 +13,10 @@
         left: 0;
         height: inherit;
         text-align: right;
+        border-bottom: solid var(--black);
 
-        border-style: solid;
-        border-color: red;
+        /* border-style: solid;
+        border-color: red; */
     }
 
     nav ul li {
@@ -46,7 +47,7 @@
     }
     
     .header-container i {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .welcome-text {
         width: 40vw;
@@ -71,5 +72,40 @@
 
     .sliding-container {
         display: block;
+    }
+
+    #project-me #projects-btn button {
+        width: 300px;
+        height: 80px;
+    }
+
+    #project-me #projects-btn button .title {
+        font-size: 1.25rem;
+    }
+
+    #project-me #projects-btn button .desc {
+        font-size: 1rem;
+    }
+
+    #educ-info div {
+        width: inherit;
+        height: 80px;
+
+        border-bottom: solid var(--black);
+
+        /* border-style: solid;
+        border-color: aqua; */
+    }
+
+    .degree {
+        font-size: 1.25rem;
+    }
+
+    .school {
+        font-size: 0.875rem;
+    }
+
+    .numbers {
+        font-size: 1.25rem;
     }
 }   

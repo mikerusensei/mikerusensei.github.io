@@ -3,13 +3,42 @@
         width: 40vw;
     }
     .image_container {
-        display: block;
-
-        border-style: solid;
-        border-color: blue;
+        height: 70vh;
     }
     /* .images img {
         width: 30vw;
         height: inherit;
     } */
+
+    .sliding-container {
+        height: 50vh;
+    }
+
+    #about-me .intro {
+        width: 40vw;
+        height: auto;
+        font-size: 1.5rem;
+    }
+
+    .header-container p {
+        font-size: 2rem;
+    }
+
+    .header-container i {
+        font-size: 2rem;
+    }
+
+    #project-me #projects-btn button {
+        width: 400px;
+        height: 100px;
+    }
+
+    #project-me #projects-btn button .title {
+        font-size: 1.5rem;
+    }
+
+    #project-me #projects-btn button .desc {
+        font-size: 1.125rem;
+    }
+
 }

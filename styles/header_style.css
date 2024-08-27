@@ -2,11 +2,12 @@ header {
     position: sticky;
     width: 100vw;
     height: 60px;
-    
+    border-bottom: solid var(--black);
 }
 
 nav {
     height: 60px;
+    
     /* border-style: solid;
     border-color: red; */
 }
@@ -40,8 +41,8 @@ ul{
     transition: all .5s;
     z-index: 9999;
 
-    border-style: solid;
-    border-color: red;
+    /* border-style: solid;
+    border-color: red; */
 }
 
 nav ul li{

@@ -1,9 +1,34 @@
 @media screen and (min-width: 1024px) {
-    .image_container {
-        display: block;
-    }
-
     .welcome-text {
         width: 40vw;
+    }
+
+    .sliding-container {
+        width: 30vw;
+        height: 40vh;
+    }
+
+    #about-me .intro {
+        width: 40vw;
+    }
+
+    .text_container p {
+        font-size: 1.875rem;
+    }
+
+    .social-links a {
+        font-size: 1.875rem;
+    }
+
+    .image_container {
+        height: 50vh;
+    }
+
+    #project-me #projects-btn {
+        width: 70vw;
+    }
+
+    #project-me #projects-btn button {
+        margin-right: 20px;
     }
 }

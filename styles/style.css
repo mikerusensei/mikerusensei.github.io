@@ -21,8 +21,8 @@ body {
     font-size: 16px;
     width: 100vw;
 
-    border-style: solid;
-    border-color: blue;
+    /* border-style: solid;
+    border-color: blue; */
 }
 
 section {
@@ -36,8 +36,9 @@ section {
     flex-direction: column;
     justify-content: center;
     text-transform: uppercase;
-    border-style: solid;
-    border-color: red;
+
+    /* border-style: solid;
+    border-color: red; */
 }
 
 .text_container {
@@ -99,8 +100,9 @@ span {
     height: 50vh;
     display: none;
     z-index: -9999;
-    border-style: solid;
-    border-color: blue;
+
+    /* border-style: solid;
+    border-color: blue; */
 }
 
 .images {
@@ -115,8 +117,8 @@ span {
     height: inherit;
     position: absolute;
 
-    border-style: solid;
-    border-color: green;
+    /* border-style: solid;
+    border-color: green; */
 }
 
 #about, #projects, #education {
@@ -124,31 +126,40 @@ span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-style: solid;
-    border-color: palevioletred;
+
+    /* border-style: solid;
+    border-color: palevioletred; */
 }
 
 .sliding-container {
+    margin: auto;
     display: none;
     overflow: hidden;
     width: 40vw;
-    height: 50vh;
+    height: 40vh;
     position: relative;
     z-index: -9999;
+    
 }
 
 .sliding-wrapper {
     display: flex;
-    width: 40vw; /* Adjust based on the number of slides */
-    height: 50vh;
+    width: inherit; 
+    height: inherit;
     transition: transform 0.5s ease-in-out;
+    
 }
 
 .img_container {
     flex: 1 0 100%;
     position: relative;
     border-style: solid;
-    border-color: palevioletred;
+    width: inherit;
+    height: inherit;
+    border: none;
+    outline: none;
+
+    /* border-color: palevioletred; */
 }
 
 .img {
@@ -156,12 +167,12 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40vw;
-    height: 40vh;
+    width: inherit;
+    height: inherit;
 }
 
 .img .bottom {
-    width: inherit;
+    width: calc(inherit - 50);
     height: inherit;
 }
 
@@ -201,25 +212,23 @@ span {
     z-index: 2;
 }
 
-
-
-
-
 #about-me, #project-me, #educ-me {
     height: 50vh;
     width: 100vw;
     display: flex;
 
-    border-style: solid;
-    border-color: green;
+    /* border-style: solid;
+    border-color: green; */
 }
 
 .header-container {
     display: flex;
-    width: 60vw;
+    width: 40vw;
     justify-content: center;
-    border-style: solid;
-    border-color: white;
+    align-items: center;
+
+    /* border-style: solid;
+    border-color: white; */
 }
 
 .header-container p{
@@ -230,7 +239,7 @@ span {
 }
 
 .header-container i {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
     margin-right: 10px;
     color: var(--black);
 }
@@ -243,20 +252,21 @@ span {
     font-family: 'Inder', sans-serif;
     font-size: 1rem;
 
-    border-style: solid;
-    border-color: aqua;
+    /* border-style: solid;
+    border-color: aqua; */
 }
 
 #project-me #projects-btn {
     height: auto;
     width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
-    display: grid;
     align-content: center;
     justify-content: center;
 
-    border-style: solid;
-    border-color: aqua;
+    /* border-style: solid;
+    border-color: aqua; */
 }
 
 #project-me #projects-btn button {
@@ -267,17 +277,20 @@ span {
     flex-direction: column; 
     align-items: flex-start;
     justify-content: center;
+    background-color: var(--black);
 }
 
 #project-me #projects-btn button .title {
     font-family: 'Kanit', sans-serif;
     font-size: 1rem;
+    color: var(--white);
 }
 
 #project-me #projects-btn button .desc {
     font-family: 'Inder', sans-serif;
     font-size: 0.625rem;
     float: left;
+    color: var(--white);
 }
 
 #educ-info {
@@ -288,21 +301,22 @@ span {
     align-content: center;
     justify-content: center;
 
-    border-style: solid;
-    border-color: aqua;
+    /* border-style: solid;
+    border-color: white; */
 }
 
 #educ-info div {
-    width: 260px;
+    width: inherit;
     height: 60px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column; 
     align-items: flex-start;
     justify-content: center;
+    border-bottom: solid var(--black);
 
-    border-style: solid;
-    border-color: green;
+    /* border-style: solid;
+    border-color: green; */
 }
 
 .degree {
@@ -322,9 +336,9 @@ footer {
     width: 100vw;
     height: 15vh;
     display: flex;
-
-    border-style: solid;
-    border-color: red;
+    border-top: solid var(--black);
+    /* border-style: solid;
+    border-color: red; */
 }
 
 footer .links div a{
