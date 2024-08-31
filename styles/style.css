@@ -172,7 +172,7 @@ span {
 }
 
 .img .bottom {
-    width: calc(inherit - 50);
+    width: inherit;
     height: inherit;
 }
 
@@ -337,6 +337,7 @@ footer {
     height: 15vh;
     display: flex;
     border-top: solid var(--black);
+    justify-content: center;
     /* border-style: solid;
     border-color: red; */
 }

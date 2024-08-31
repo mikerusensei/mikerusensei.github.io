@@ -3,15 +3,17 @@
         width: 40vw;
     }
     .image_container {
-        height: 70vh;
+        height: 60vh;
+        width: 60vh;
     }
-    /* .images img {
-        width: 30vw;
+
+    .images img {
+        width: inherit;
         height: inherit;
-    } */
+    }
 
     .sliding-container {
-        height: 50vh;
+        height: inherit;
     }
 
     #about-me .intro {
