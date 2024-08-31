@@ -20,6 +20,7 @@ body {
     background-color:var(--white);
     font-size: 16px;
     width: 100vw;
+    overflow-x: hidden;
 
     /* border-style: solid;
     border-color: blue; */
