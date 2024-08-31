@@ -12,7 +12,7 @@
         width: 40vw;
     }
 
-    .text_container p {
+    .text_container p, .text_container span {
         font-size: 1.875rem;
     }
 
