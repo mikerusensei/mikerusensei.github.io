@@ -21,9 +21,6 @@ body {
     font-size: 16px;
     width: 100vw;
     overflow-x: hidden;
-
-    /* border-style: solid;
-    border-color: blue; */
 }
 
 section {
@@ -37,9 +34,6 @@ section {
     flex-direction: column;
     justify-content: center;
     text-transform: uppercase;
-
-    /* border-style: solid;
-    border-color: red; */
 }
 
 .text_container {
@@ -50,9 +44,6 @@ section {
     margin-bottom: 20px;
     align-content: center;
     justify-content: center;
-
-    /* border-style: solid;
-    border-color: blueviolet; */
 }
 
 #welcome {
@@ -63,22 +54,14 @@ section {
     justify-content: center;
     align-items: center;
     align-content: center;
-
-    /* border-style: solid;
-    border-color: blue; */
 }
 
 .btns_socials {
     width: inherit;
-
-    /* border-style: solid;
-    border-color: lawngreen; */
 }
 
 .social-links {
     margin-top: 10px;
-    /* border-style: solid;
-    border-color: violet; */
 }
 
 .social-links a {
@@ -97,29 +80,21 @@ section {
 
 .image_container {
     position: relative;
-    width: 50vw;
-    height: 50vh;
     display: none;
     z-index: -9999;
-
-    /* border-style: solid;
-    border-color: blue; */
 }
 
 .images {
     position: relative;
     align-items: center;
-    width: 50vh;
-    height: auto;
+    width: 20rem;
+    height: 20rem;
 }
 
 .images img {
     width: inherit;
     height: inherit;
     position: absolute;
-
-    /* border-style: solid;
-    border-color: green; */
 }
 
 #about, #projects, #education {
@@ -127,40 +102,32 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    /* border-style: solid;
-    border-color: palevioletred; */
 }
 
 .sliding-container {
-    margin: auto;
     display: none;
+    flex-direction: column;
+    margin: auto;
     overflow: hidden;
     width: 40vw;
-    height: 40vh;
+    height: auto;
     position: relative;
     z-index: -9999;
-    
+    justify-content: center;    
 }
 
 .sliding-wrapper {
     display: flex;
-    width: inherit; 
-    height: inherit;
+    height: auto;
     transition: transform 0.5s ease-in-out;
-    
 }
 
 .img_container {
+    display: flex;
     flex: 1 0 100%;
     position: relative;
-    border-style: solid;
-    width: inherit;
-    height: inherit;
-    border: none;
-    outline: none;
-
-    /* border-color: palevioletred; */
+    justify-content: center;
+    width: 50vw;
 }
 
 .img {
@@ -168,42 +135,18 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: inherit;
-    height: inherit;
+    width: 20rem;
+    height: 20rem;
 }
 
 .img .bottom {
-    width: inherit;
-    height: inherit;
+    width: 20rem;
+    height: 20rem;
 }
 
 .img img {
     position: absolute;
 }
-
-/* .img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50vw;
-    height: 50vh;
-} */
-
-/* .bottom {
-    width: 500px;
-    height: 500px;
-    border-style: solid;
-    border-radius: aqua ;
-}
-
-.top.image1{
-    width: 350px;
-    height: 485px;
-}
-.top.image2 {
-    width: 250px;
-    height: 485px;
-} */
 
 .img img.bottom {
     z-index: 1;
@@ -217,9 +160,6 @@ section {
     height: 50vh;
     width: 100vw;
     display: flex;
-
-    /* border-style: solid;
-    border-color: green; */
 }
 
 .header-container {
@@ -227,9 +167,8 @@ section {
     width: 40vw;
     justify-content: center;
     align-items: center;
-
-    /* border-style: solid;
-    border-color: white; */
+    border-bottom: solid var(--black);
+    margin-bottom: 1rem;
 }
 
 .header-container p{
@@ -252,9 +191,6 @@ section {
     color: var(--black);
     font-family: 'Inder', sans-serif;
     font-size: 1rem;
-
-    /* border-style: solid;
-    border-color: aqua; */
 }
 
 #project-me #projects-btn {
@@ -265,9 +201,6 @@ section {
     margin: auto;
     align-content: center;
     justify-content: center;
-
-    /* border-style: solid;
-    border-color: aqua; */
 }
 
 #project-me #projects-btn button {
@@ -301,9 +234,6 @@ section {
     display: grid;
     align-content: center;
     justify-content: center;
-
-    /* border-style: solid;
-    border-color: white; */
 }
 
 #educ-info div {
@@ -315,9 +245,6 @@ section {
     align-items: flex-start;
     justify-content: center;
     border-bottom: solid var(--black);
-
-    /* border-style: solid;
-    border-color: green; */
 }
 
 .degree {
@@ -339,8 +266,6 @@ footer {
     display: flex;
     border-top: solid var(--black);
     justify-content: center;
-    /* border-style: solid;
-    border-color: red; */
 }
 
 footer .links div a{

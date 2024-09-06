@@ -3,13 +3,18 @@
         width: 40vw;
     }
 
-    .sliding-container {
+    /* .sliding-container {
         width: 30vw;
         height: 40vh;
+    } */
+
+    .header-container p, .header-container i{
+        font-size: 1.875rem;
     }
 
     #about-me .intro {
         width: 40vw;
+        font-size: 1.5rem;
     }
 
     .text_container p, .text_container span {
@@ -20,9 +25,9 @@
         font-size: 1.875rem;
     }
 
-    .image_container {
+    /* .image_container {
         height: 50vh;
-    }
+    } */
 
     #project-me #projects-btn {
         width: 70vw;

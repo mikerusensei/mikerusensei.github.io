@@ -62,8 +62,8 @@ function scrollFunction() {
     } else {
         top_btn.style.display = "none";
     }
-}
-;
+};
+
 function createFallingChecks() {
     const check = document.createElement('div');
     check.classList.add('checks');

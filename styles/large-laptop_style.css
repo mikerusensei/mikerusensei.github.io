@@ -2,19 +2,19 @@
     .welcome-text {
         width: 40vw;
     }
-    .image_container {
+    /* .image_container {
         height: 60vh;
         width: 60vh;
-    }
+    } */
 
-    .images img {
+    /* .images img {
         width: inherit;
         height: inherit;
-    }
+    } */
 
-    .sliding-container {
+    /* .sliding-container {
         height: inherit;
-    }
+    } */
 
     #about-me .intro {
         width: 40vw;

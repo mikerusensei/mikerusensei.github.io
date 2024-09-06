@@ -3,10 +3,6 @@
         display: none;
     }
 
-    header {
-        height: 60px;
-    }
-
     ul {
         height: inherit;
         width: 100vw;
@@ -52,26 +48,16 @@
     .welcome-text {
         width: 40vw;
     }
-
     .image_container {
-        position: relative;
-        display: flex;
-        width: 40vw;
-        height: 40vh;
-        z-index: -1;
-    }
-    .images {
-        width: inherit;
-        height: auto;
+        display: block;
     }
 
     #about-me .intro {
         width: 50vw;
-    
     }
 
     .sliding-container {
-        display: block;
+        display: flex;
     }
 
     #project-me #projects-btn button {
@@ -92,9 +78,6 @@
         height: 80px;
 
         border-bottom: solid var(--black);
-
-        /* border-style: solid;
-        border-color: aqua; */
     }
 
     .degree {
